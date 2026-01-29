@@ -1,2 +1,0 @@
-# Inversiones
-El objetivo de este script ha sido el de trabajar con valores de plazos fijos que he realizado durante el 2025. Los sample files contienen valores ficticios para mantener la sensibilidad de los montos de Ingreso de Capital como asi tambien los nombres de los Bancos en cuestion.
