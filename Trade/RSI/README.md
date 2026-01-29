@@ -1,7 +1,5 @@
 # Analizador de Ethereum con Estrategia RSI
 
-![Ethereum RSI Chart](https://via.placeholder.com/800x400/1e3a8a/ffffff?text=ETH+RSI+Strategy)
-
 **Un script simple y visual para analizar Ethereum (ETH) usando el indicador RSI.**
 
 Este notebook permite:
@@ -25,6 +23,6 @@ Este notebook permite:
    - **Vendes TODO** cuando aparece señal roja (y tienes ETH)
    - Al final te dice: *"Con $1000 inicial, terminarías con $X.XXX → +XXX% de ganancia"*
 
-## 📊 Ejemplo
+## Ejemplo
 
 **Gráfico superior**: Línea azul del precio ETH + flechas de señales
