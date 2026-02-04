@@ -3,7 +3,7 @@
 Interactive business dashboard built with **Python**, **Pandas**, **SQLite**, **Streamlit** and **Plotly Express**  
 using the classic **Sample - Superstore** dataset (retail sales, profit, customers, regions, categories, etc.).
 
-![Superstore Sales Dashboard](SuperStoreSalesDashboard.png)
+![Superstore Sales Dashboard](assets/SuperStoreSalesDashboard.png)
 *Interactive Streamlit dashboard showing sales by region, category and KPIs*
 
 ## Project Goals
