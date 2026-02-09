@@ -2,3 +2,4 @@ venv/
 __pycache__/
 .ipynb_checkpoints/
 data/telco_customer_churn.db
+.DS_Store
