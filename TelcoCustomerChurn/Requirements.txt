@@ -8,6 +8,3 @@
 - Venv
 - GitHub
 - Streamlit Community Cloud
-
-# 2nd Phase
-- Scikit-learn
