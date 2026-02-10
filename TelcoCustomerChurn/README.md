@@ -31,7 +31,7 @@ interactive dashboard.
 ## How to Run
 ```bash
 streamlit run dashboard.py
-
+```
 ## Dashboard Features
 - Interactive filters (Contract Type, Churn Status)
 - KPI cards for quick insights
