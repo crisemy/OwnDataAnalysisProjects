@@ -1,2 +1,14 @@
+# General Rules
+.DS_Store
+*/.DS_Store
+.vscode/
+
+# --- Trade Rules ---
 Trade/Inversiones/sample_data/Plazo_fijos_19_11_2025.csv
 Trade/Inversiones/sample_data/Plazo_fijos_otros_bancos.csv
+
+# --- TelcoCustomerChurn Rules ---
+TelcoCustomerChurn/venv/
+TelcoCustomerChurn/**/__pycache__/
+TelcoCustomerChurn/.ipynb_checkpoints/
+TelcoCustomerChurn/data/telco_customer_churn.db
