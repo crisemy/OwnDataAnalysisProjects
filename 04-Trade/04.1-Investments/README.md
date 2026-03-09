@@ -1,0 +1,2 @@
+# Investments
+The objective of this script has been to work with fixed-term deposit values ​​that I have made during 2025. The sample files contain fictitious values ​​to maintain the sensitivity of the Capital Income amounts as well as the names of the Banks in question.
