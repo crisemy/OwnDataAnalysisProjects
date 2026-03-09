@@ -85,19 +85,6 @@ avg_monthly_charges = pd.read_sql_query(
 ).iloc[0, 0]
 
 # -------------------------
-# Churn by Contract Type
-# (no Contract filter applied, only Churn if selected)
-# -------------------------
-churn_where = ""
-if selected_churn != "All":
-    churn_where = f" WHERE Churn = '{selected_churn}'"
-
-churn_by_contract_df = pd.read_sql_query(
-    CHURN_BY_CONTRACT + churn_where,
-    conn
-)
-
-# -------------------------
 # KPI Cards
 # -------------------------
 col1, col2, col3, col4 = st.columns(4)
@@ -113,6 +100,29 @@ st.divider()
 # Churn by Contract Type
 # -------------------------
 st.subheader("Churn Rate by Contract Type")
+
+if selected_churn == "All":
+    # Consulta sin filtro (la de queries.py)
+    churn_by_contract_df = pd.read_sql_query(CHURN_BY_CONTRACT, conn)
+else:
+    # Consulta con filtro correcto (WHERE antes de GROUP BY)
+    query_churn_by_contract = """
+    SELECT
+        Contract,
+        ROUND(
+            100.0 * AVG(CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END),
+            2
+        ) AS churn_rate_pct
+    FROM customers
+    WHERE Churn = ?
+    GROUP BY Contract
+    ORDER BY churn_rate_pct DESC
+    """
+    churn_by_contract_df = pd.read_sql_query(
+        query_churn_by_contract,
+        conn,
+        params=[selected_churn]
+    )
 
 st.dataframe(churn_by_contract_df, use_container_width=True)
 st.bar_chart(churn_by_contract_df.set_index("Contract"))
