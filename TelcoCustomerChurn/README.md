@@ -32,6 +32,8 @@ interactive dashboard.
 ```bash
 streamlit run dashboard.py
 ```
+![Telco Streamlit Dashboard report](./images/TelcoDashboard.png)
+
 ## Dashboard Features
 - Interactive filters (Contract Type, Churn Status)
 - KPI cards for quick insights
